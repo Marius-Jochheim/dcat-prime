@@ -1,4 +1,2 @@
 # DCAT Prime
-
-## Forked from
-The full repository can be found [HERE](https://github.com/jacobedawson/connect-metamask-react-dapp).
+Parametric insurance built on the ethereum blockchain using opium.network and chainlink oracles.
