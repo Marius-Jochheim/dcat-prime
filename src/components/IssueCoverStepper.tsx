@@ -82,7 +82,6 @@ type Props = {
   handleOpenModal: any;
 };
 
-
 export default function IssueCoverStepper({ handleOpenModal }: Props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
