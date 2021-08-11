@@ -1,7 +1,11 @@
 import {useContractMethod} from '../hooks'
 import { utils } from 'ethers'
 import { Contract } from '@ethersproject/contracts'
-
+import {
+  Box,
+  Button,
+  Heading,
+} from "@chakra-ui/react";
 
 type Props = {
   contractAbi: any;

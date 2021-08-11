@@ -113,12 +113,13 @@ export default function IssueCoverStepper({ handleOpenModal }: Props) {
 
   const getBalance = () => {
     let tokenIndex = tokenList.findIndex(x => x.symbol === selectedToken);
-    console.log(balances);
+    // console.log(balances);
 
+    // if(balances.length > 0){
+    //   return tokenIndex !== -1 && formatUnits(balances[tokenIndex]![0],tokenList[tokenIndex].decimals)
+    // }
 
-    if(balances.length > 0){
-      return tokenIndex !== -1 && formatUnits(balances[tokenIndex]![0],tokenList[tokenIndex].decimals)
-    }
+    return 0
   }
 
   const getSelectedToken = () => {
@@ -277,7 +278,7 @@ export default function IssueCoverStepper({ handleOpenModal }: Props) {
     </Box>
   )
 
-  const contentTransaction = <ConfirmOptionTransaction contractAddress={getSelectedToken().address} contractAbi={ERC20Interface}
+  const contentTransaction = <ConfirmOptionTransaction contractAddress={getSelectedToken().address} contractAbi={ERC20Interface} />
 
   const steps = [
     { label: "Case", icon: FiUmbrella, content: contentCase },
@@ -288,7 +289,7 @@ export default function IssueCoverStepper({ handleOpenModal }: Props) {
 
   const bg = useColorModeValue('white', 'gray.800');
 
-  return account ? (
+  return (account && balances) ? (
     <Box
       bg={bg}
       borderRadius="xl"

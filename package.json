@@ -1,7 +1,7 @@
 {
   "name": "dcat-prime-POC",
   "version": "0.1.0",
-  "author": "Jacob E. Dawson",
+  "author": "Calvin Hoenes",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
