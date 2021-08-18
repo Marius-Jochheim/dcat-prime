@@ -55,7 +55,7 @@ export default function MainNav() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-            DCAT Prime
+            DCAT Prime Test
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
